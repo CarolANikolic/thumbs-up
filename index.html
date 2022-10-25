@@ -5,25 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keyword" content="thumbs-up, recomendation, review">
     <meta description="Thumbs-up service recomendation platform" >
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <title>Thumbs-up</title>
 </head>
 <body>
-    <header>
-        <img src="./images/logo.png" alt="logo">
-    </header>
     <main class="main-form">
+        <img src="./images/logo.png" alt="logo" class="logo">
         <div class="container-form">
+            <h1 class="form-title">Recomendation</h1>
             <form class="recomendation-form">
-                <label for="fname">First name:</label>
-                <input type="text" id="fname" name="fname"><br><br>
-                <label for="lname">Last name:</label>
-                <input type="text" id="lname" name="lname"><br><br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email"><br><br>
-                <span class="message_border"></span>
-                <label for="message">Message:</label>
-                <input trype="text" id="message" name="message" placeholder="Type your opnion about the company"><br><br>
-                <button class="submit">Submit</button>
+                <div class="fname">
+                    <label for="fname">First name</label>
+                    <input type="text" id="fname" name="fname">
+                </div>
+
+                <div class="lname">
+                    <label for="lname">Last name</label>
+                    <input type="text" id="lname" name="lname">
+                </div>
+              
+                <div class="email">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" class="email" placeholder="youremail@gmail.com">
+                </div>
+                
+                <span class="email-border"></span>
+
+                <div class="message">
+                    <label for="message">Message</label>
+                    <input trype="text" id="message" name="message" placeholder="Enter your opnion about the product">
+                </div>
+               
+                <div class="container-bt">
+                    <button class="submit">Submit</button>
+                </div>
             </form>
         </div>
     </main>
