@@ -7,6 +7,7 @@
     <meta description="Thumbs-up service recomendation platform" >
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
@@ -17,35 +18,42 @@
         <img src="./images/logo.png" alt="logo" class="logo">
         <div class="container-form">
             <h1 class="form-title">Recomendation</h1>
-            <form class="recomendation-form">
-                <div class="fname">
+            <form class="recomendation-form" id="form" action="/">
+                <div class="input-control">
                     <label for="fname">First name</label>
-                    <input type="text" id="fname" name="fname">
+                    <input type="text" id="fname" name="fname" oninput="validateFName()">
+                    <span class="span-name" id="span-first-name">Please, enter only letters</span>
                 </div>
 
-                <div class="lname">
+                <div class="input-control">
                     <label for="lname">Last name</label>
-                    <input type="text" id="lname" name="lname">
+                    <input type="text" id="lname" name="lname" oninput="validateLName()">
+                    <span class="span-name" id="span-last-name">Please, enter only letters</span>
                 </div>
               
-                <div class="email">
+                <div class="input-control">
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" class="email" placeholder="example@email.com">
+                    <input type="text" id="email" name="email" placeholder="example@email.com" required oninvalid="this.setCustomValidity('Please, enter email field')">
                 </div>
                 
-                <span class="email-border"></span>
+                
 
                 <div class="message">
                     <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Enter your opnion about the product"></textarea>
-                    <!-- <input trype="text" id="message" name="message" placeholder="Enter your opnion about the product"> -->
+                    <textarea id="message" name="message" placeholder="Enter your opnion about the product" required></textarea>
                 </div>
                
                 <div class="container-bt">
-                    <button class="submit">Submit</button>
+                    <button type="submit" class="submit" id="submit-bt" onclick="myFunction()">Submit</button>
                 </div>
+                <div class="img-credit-container">
+                    <p class="img-credits">Photo by <a href="https://unsplash.com/@killerfvith?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alex wong</a> on <a href="https://unsplash.com/s/photos/business-city?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+                    </p>
+                </div>
+                
             </form>
         </div>
     </main>
+    
 </body>
 </html>
