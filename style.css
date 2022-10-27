@@ -1,8 +1,17 @@
+/* Setting font-family for all document */
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Declaring glocal variables with pseudo-class */
+
 :root {
     --font-type: 'Montserrat';
     --width: 100%;
 }
 
+/* Defining background for index.html and formsubmited.html */
 .main-form {
     height: 100vh;
     display: flex;
@@ -14,12 +23,24 @@
     flex-direction: column;
 }
 
+.main-form-sent {
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(225,142,56,1) 0%, rgba(253,210,29,1) 35%, rgba(246,238,203,0.9476613562091504) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Positioning logo */
 .logo {
     position: absolute;
     width: 10%;
     top: 3%;
     left: 2%;
 }
+
+/* Styling of unique index.html elements */
 
 .container-form {
     display: flex;
@@ -145,13 +166,46 @@ input {
     font-size: 0.5em;
 }
 
+/* Styling of unique form-submited.html elements */
+
+/* Defining container dimensions, display, spacing and color */
+.submited-msg {
+    display: flex;
+    box-sizing: border-box;
+    width: 50%;
+    min-height: 300px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    background: #ffffff;
+    margin-top: 10%;
+    padding: 3%;
+}
+
+/* Adding style to title and resizing check mark image */
+.submited-msg h1 {
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.check-mark {
+    width: 10%;
+}
+
+
 /* Responsive layout for mobile */
 
 @media (max-width: 768px) {
 
+    /* Positioning logo for index.html and form-submited.html */
+
     .logo {
         width: 20%;
     }
+
+    /* Set up style for unique elements in the index.html */
 
     .container-form {
         width: 90%;
@@ -180,4 +234,21 @@ input {
         padding-top: 20px;
     }
 
+    /* Set up style for unique elements in form-submited.html */
+
+    .submited-msg {
+        width: 80%;
+        min-height: 200px;
+        }
+    
+        .submited-msg h1 {
+            font-size: 1.2em;
+            text-align: center;
+            padding: 0.5;
+        }
+    
+        .check-mark {
+            width: 15%;
+        }
+    
     }    
