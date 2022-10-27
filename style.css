@@ -16,7 +16,7 @@
 
 .logo {
     position: absolute;
-    width: 5%;
+    width: 10%;
     top: 3%;
     left: 2%;
 }
@@ -38,11 +38,12 @@
 
 .recomendation-form {
     width: var(--width);
-    height: 400px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     padding-left: 3%;
     background: #ffffff;
+    padding: 3%;
 }
 
 
@@ -68,13 +69,13 @@ input {
     font-family: var(--font-type);
     font-size: 0.5em;
     color: #FF3333;
+    width:100%;
+    padding-left: 28%;
 }
 
-.span-email {
-    display: none;
-    font-family: var(--font-type);
-    font-size: 0.5em;
-    color: #FF3333;
+.email {
+    margin-left : 13%;
+    
 }
 
 .message {
@@ -142,6 +143,41 @@ input {
     color: #201F1F;
     font-family: var(--font-type);
     font-size: 0.5em;
-
-
 }
+
+/* Responsive layout for mobile */
+
+@media (max-width: 768px) {
+
+    .logo {
+        width: 20%;
+    }
+
+    .container-form {
+        width: 90%;
+    }
+
+    .recomendation-form {
+        width: 80%;
+    }
+
+    input {
+        width: 90%;
+    }
+
+    .input-control label {
+        display: block;
+    }
+
+    .input-control input { 
+        display: block;
+        margin-left: 0;
+        margin-top: 2%;
+
+    }
+
+    .img-credits {
+        padding-top: 20px;
+    }
+
+    }    
