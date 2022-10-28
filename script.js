@@ -5,12 +5,15 @@
     const inputMessage = document.getElementById('message');
     const spanFName = document.getElementById('span-first-name');
     const spanLName = document.getElementById('span-last-name');
+    const inputEmail = document.getElementById('email');
+    const spanEmail = document.getElementById('span-email');
     const submitButton = document.getElementById('submit-bt');
     const regexNumber = /[0-9]/g;
-   
+    const regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    
 
-
-// Chage border and show span for first name input error
+// First name validation
+// Change border and show span for first name input error
  function showErrorFName() {
     inputFirstName.style.border = '2px solid #FF3333';
     spanFName.style.display = 'block';
@@ -19,22 +22,10 @@
 // Revert the changes in border and span made by the first name input
   function removeErrorFName() {
     inputFirstName.style.border = '';
-    spanEmail.style.display = 'none';
+    spanFName.style.display = 'none';
 }
 
-// Chage border and show span for last name input error
- function showErrorLName() {
-    inputLastName.style.border = '2px solid #FF3333';
-    spanLName.style.display = 'block';
- }
-
-// Revert the changes in border and span made by the last name input error
-  function removeErrorLName() {
-    inputFirstName.style.border = '';
-    spanEmail.style.display = 'none';
-}
-
-//check if first name input contains numbers
+// Check if first name input contains numbers
 function validateFName() {
     
     const valueFName = inputFirstName.value;
@@ -47,7 +38,21 @@ function validateFName() {
     }    
 }
 
-// check if last name input contains numbers
+
+// Last name validation
+// Chage border and show span for last name input error
+function showErrorLName() {
+    inputLastName.style.border = '2px solid #FF3333';
+    spanLName.style.display = 'block';
+ }
+
+// Revert the changes in border and span made by the last name input error
+function removeErrorLName() {
+    inputLastName.style.border = '';
+    spanLName.style.display = 'none';
+}
+
+// Check if last name input contains numbers
 function validateLName() {
 
     const valueLName = inputLastName.value;
@@ -62,10 +67,39 @@ function validateLName() {
 }
 
 
+//Email validation
+// Chage border and show span for email name input error
+function showErrorEmail() {
+    inputEmail.style.border = '2px solid #FF3333';
+    spanEmail.style.display = 'block';
+}
+
+// Revert the changes in border and span made by the email input error
+function removeEmailError() {
+    inputEmail.style.border = '';
+    spanEmail.style.display = 'none';
+}
+
+// Validate email input format
+function validateEmail() {
+
+    const email = inputEmail.value;
+    const foudMatch = email.match(regexEmail);
+
+    if(foudMatch) {
+        removeEmailError();
+    } else {
+        showErrorEmail();
+    }
+}
 
 
+// Connect form-submited.html on click of submit button
+// submitButton.addEventListener('click', sendForm());
 
-
+function sendForm() {
+    window.open('form-submited.html');
+}
 
 
 
