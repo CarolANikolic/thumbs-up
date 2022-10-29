@@ -95,8 +95,6 @@ function validateEmail() {
 
 
 // Connect form-submited.html on click of submit button
-// submitButton.addEventListener('click', sendForm());
-
 function sendForm() {
     window.open('form-submited.html');
 }
