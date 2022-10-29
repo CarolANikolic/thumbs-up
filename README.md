@@ -3,7 +3,7 @@
 
 ## A Product Recomendation Form
 
-Thumbs-up is a short product recomendation form that allows you to write a product review. The input fields are validated and once the form is sent, it displays a confirmation that the review was sent successfully. 
+Thumbs-up is a short product recomendation form that allows you to write a product review. The input fields are validated using "regex" and the method match(). Once the form is validated and sent, it displays a confirmation that the review was sent successfully. 
 
 The intention of this projected was to test my skills in HTML, CSS and JS.
 
@@ -18,11 +18,11 @@ The intention of this projected was to test my skills in HTML, CSS and JS.
 **3.** Write your opinion about the product, hit the button submit and wait to see the confirmation.
 
 <div align="center">
-<img src="./images/validation-screen.png" width=30% alt="Desktop view of Thumbs-up form validation">
+<img src="./images/validation-screen.png" width=60% alt="Desktop view of Thumbs-up form validation">
 </div>
 
 <div align="center">
-<img src="./images/confirmation-screen.png" width=30% alt="Desktop view of Thumbs-up sent form confirmation">
+<img src="./images/confirmation-screen.png" width=60% alt="Desktop view of Thumbs-up sent form confirmation">
 </div>
 
 ## Go mobile
