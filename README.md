@@ -33,6 +33,8 @@ Thumbs-up layout style was also designed to support mobile.
   <img src="./images/mobile-screen.png" width=30% alt="Mobile view of Thumbs-up form">
 </div>
 
+Check it live: https://thumbsup.netlify.app
+
 ## Projet's Structure
 
 >Conceptual design of the website and project</br>
