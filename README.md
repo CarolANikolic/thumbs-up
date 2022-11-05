@@ -46,4 +46,4 @@ Check it live: https://thumbsup.netlify.app
 >Creating a diferent html page for recomendation sent confirmation</br>
 >Applying and recycling a diferent style for the confirmation page</br>
 >Adding button functionality</br>
->Bringin the website live, using Netlify</br>
+>Bringing the website live, using Netlify</br>
