@@ -17,7 +17,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('./images/bg-img.png');
+    background-image: url('../images/bg-img.png');
     background-size: cover;
     opacity: 1;
     flex-direction: column;
